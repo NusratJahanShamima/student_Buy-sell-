@@ -21,7 +21,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/products', require('./routes/products'));
 
 //  image folder
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/uploads', express.static('uploads'));
 // server start 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
