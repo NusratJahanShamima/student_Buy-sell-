@@ -12,13 +12,17 @@
 
 <nav class="navbar bg-white shadow-sm px-4">
     <span class="fw-bold text-success">Saved Items</span>
-    <a href="buyer-dashboard.html" class="btn btn-outline-success btn-sm">Back</a>
+    <a onclick="goBack()" class="btn btn-outline-success btn-sm">Back</a>
 </nav>
 
 <div class="container mt-4">
     <div id="savedContainer" class="row g-3"></div>
 </div>
-
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 <script src="js/saved.js"></script>
 </body>
 </html>

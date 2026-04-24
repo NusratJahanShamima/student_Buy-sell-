@@ -1,40 +1,49 @@
-
 body {
     margin: 0;
 }
 
+/* Navbar */
 .navbar {
     height: 70px;
     z-index: 1000;
 }
+
+/* Background */
 .add-bg {
     background: url('../images/flo.jpg') no-repeat center center/cover;
     min-height: 100vh;
     backdrop-filter: blur(4px);
 }
 
+/* Container */
 .add-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80px; 
+    padding-top: 90px;
     padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
+/* Card */
 .add-card {
     width: 420px;
-    background: rgba(255, 255, 255, 0.95); 
+    max-width: 100%;   
+    background: rgba(255, 255, 255, 0.95);
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
+/* Inputs */
 .add-card input,
 .add-card select,
 .add-card textarea {
     border-radius: 8px;
 }
 
+/* Button */
 .btn-success {
     background-color: #198754;
     border: none;
@@ -42,4 +51,38 @@ body {
 
 .btn-success:hover {
     background-color: #157347;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .add-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .add-container {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-card {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .add-container {
+        padding-top: 110px;
+    }
+}
+@media (max-width: 768px) {
+    .add-bg {
+        background-position: center;
+        background-size: cover;
+    }
 }
